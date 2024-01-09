@@ -1,6 +1,8 @@
 parentDiv=document.querySelector(".parentDiv");
 const arr=[];
-let btns=document.querySelector(".nav2-options")
+let btns=document.querySelector(".nav2-options");
+let clickHere=document.querySelector("#clickHere");
+let restart=document.querySelector("#restart");
 let n=0;
 let i=0;
 
@@ -20,7 +22,9 @@ arrSize.addEventListener("keypress",function(event)
    n=(n*10)+x;
 });
 
-let clickHere=document.querySelector("#clickHere");
+restart.addEventListener("click",function(){
+ window.location.reload();
+});
 clickHere.addEventListener("click",function()
 {
    

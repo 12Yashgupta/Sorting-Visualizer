@@ -18,6 +18,8 @@ box-sizing: border-box;
     display: flex;
     justify-content: center;
     position: relative;
+    background-color: color-mix(in srgb, #96C2DB, #FFFFFF);
+
 }
 .innerPro{
    
@@ -147,7 +149,7 @@ box-sizing: border-box;
    
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 .start #clickHere
 {
@@ -162,4 +164,23 @@ box-sizing: border-box;
    border-bottom-right-radius: 10px;
    cursor: pointer;
    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.start #restart
+{
+   height: 70%;
+   width: 20%;
+   font-size: 18px;
+   color: red;
+   font-weight: 700;
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+   border-bottom-left-radius: 10px;
+   border-bottom-right-radius: 10px;
+   cursor: pointer;
+   background-color: rgba(255, 255, 255, 0.9);
+  margin-right: 30px;
+}
+.start #restart:hover{
+    transform: scale(1.2);
 }
