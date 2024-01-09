@@ -1,0 +1,165 @@
+*
+{
+margin: 0;
+padding: 0;
+font-family: 'Montserrat', sans-serif;
+box-sizing: border-box;
+}
+.main
+{
+    height: 100vh;
+    width: 100vw;
+    border: 5px solid black;
+}
+.parentDiv
+{
+    height: 75%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.innerPro{
+   
+    position: relative;
+}
+.nav
+{
+    height: 25%;
+    width: 100%;
+    display: flex;
+}
+.nav1
+{
+    height: 100%;
+    width: 40%;
+    background-color: #121212;
+  
+}
+.nav2
+{
+    height: 100%;
+    width: 60%;
+    background-color: #121212;
+    color: white;
+}
+.nav2-options
+{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.nav2-heading
+{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 50px;
+}
+.nav2-options button 
+{
+    height: 50%;
+    width: 150px;
+    font-size: 25px;
+    font-weight: 700;
+    background-color: black;
+    color: white;
+    border: none;
+}
+.nav2-options  button:hover
+{
+    background-color: blue;
+    cursor: pointer;
+}
+
+.last
+{
+    background-color: green !important;
+}
+
+.iterate1
+{
+    background-color: red !important;
+}
+.iterate2
+{
+    background-color: orange !important;
+}
+.arraySize
+{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items:flex-end;
+    justify-content: center;
+    margin-bottom: 10px;
+   
+}
+.arraySize label
+{
+    color: white;
+    margin-right: 13%;
+    font-weight: 700;
+   
+}
+.speed
+{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+   
+}
+.speed label
+{
+    color: white;
+    margin-right: 10%;
+    font-weight: 700;
+}
+
+.arraySize  input
+{
+    
+     width: 20%;
+     height: 30%;
+     font-size: 20px;
+     font-weight: 700;
+}
+
+.speed input
+{
+    margin-right: 3%;
+    width: 25%;
+    margin-left: 2%;
+}
+
+
+.start
+{
+    height: 25%;
+    width: 100%;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.start #clickHere
+{
+   height: 70%;
+   width: 30%;
+   font-size: 20px;
+   color: blue;
+   font-weight: 700;
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+   border-bottom-left-radius: 10px;
+   border-bottom-right-radius: 10px;
+   cursor: pointer;
+   background-color: rgba(255, 255, 255, 0.8);
+}
