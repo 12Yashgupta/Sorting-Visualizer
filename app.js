@@ -8,13 +8,14 @@ let i=0;
 
 let arrSize=document.querySelector("#arrSize");
 let arrSpeed=document.querySelector("#arrSpeed");
-let speed=101;
+let speed=500;
 arrSpeed.addEventListener("change",function()
 {
 
-  speed=(102-(arrSpeed.value));
+  speed=(500-(arrSpeed.value));
   console.log(speed);
 });
+
 let count=0;
 arrSize.addEventListener("keypress",function(event)
 {
@@ -65,31 +66,12 @@ function sleep()
     });
 }
 
-
-
-
- function changeStyle(id1,id2)
- {
-    const a=document.querySelector("#"+"elem"+id1);
-    const b=document.querySelector("#"+"elem"+id2);
-    const a_height=a.style.height;
-    const b_height=b.style.height;
-    const a_bgColor=a.style.backgroundColor;
-    const b_bgColor=b.style.backgroundColor;
-    a.style.height=b_height;
-    b.style.height=a_height;
-    a.style.backgroundColor=b_bgColor;
-    b.style.backgroundColor=a_bgColor;
- }
-
-
-
  const bubble=document.querySelector("#btn1");
  const select=document.querySelector("#btn2");
  const insert=document.querySelector("#btn3");
  const merge=document.querySelector("#btn4");
  const quick=document.querySelector("#btn5");
- const heap=document.querySelector("#btn6");
+//  const heap=document.querySelector("#btn6");
 
  bubble.addEventListener("click",function(){
   funClicked(bubble);
@@ -107,16 +89,16 @@ function sleep()
     insertionSort(arr);
     
   });
-
-
-
   merge.addEventListener("click",function(){
     funClicked(merge);
     console.log("merge sort clicked");
     MergeSort(arr,0,n-1);
     
   });
-
+  quick.addEventListener("click",function(){
+    funClicked(quick);
+    QuickSort(arr,0,n-1); 
+  });
 function funClicked(obj)
 {
    obj.style.backgroundColor="white"

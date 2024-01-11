@@ -48,7 +48,10 @@ async function MergeSort(arr,start,end)
     if(start>=end)
     return;
    
+
     let mid=Math.ceil((start+end)/2);
+    let mid_obj=document.querySelector("#elem"+mid);
+    mid_obj.style.backgroundColor="black";
    await MergeSort(arr,start,mid-1);
    for(let i=start;i<=mid-1;i++)
    {
